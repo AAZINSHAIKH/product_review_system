@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Add Employee</title>  
+    <style>
+        body { 
+  margin: 0;
+  background-color:  #635D5C;
+  text-align: center;
+}
+
+.header {
+  overflow: hidden;
+  text-align: center;
+  background-color:  #FF7F5C;
+  padding: 10px 10px;
+}
+
+table {
+  margin: auto;
+}
+.tb_text{
+padding: 5px;
+background-color: black;
+color: orange;
+}
+
+.btn-sub-add {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 auto;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 5%;
+  will-change: transform;
+}
+    </style>
+</head>  
+<body>  
+    <div class ="header"><h2>Product Information</h2> </div><br><br> 
+    <form action = "/savedetails" method="post">  
+    <table>  
+        <tr><td class="tb_text">Product_ID</td><td><input type="text" name="product_id"></td></tr>  
+        <tr><td class="tb_text">Product_Name</td><td><input type="text" name="product_name"></td></tr>  
+        <tr><td class="tb_text">About Product</td><td><input type="text" name="about_product"></td></tr>  
+        <!--<tr><td><input type="submit" value="Submit"></td></tr> -->
+    </table> 
+    <br><br>
+    <button type="submit" class="btn-sub-add">Submit</button> 
+    </form>  
+</body>  
+</html>  

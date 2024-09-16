@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Product</title>
+    <style>
+        body { 
+  margin: 0;
+  background-color:  #635D5C;
+  text-align: center;
+}
+
+.header {
+  overflow: hidden;
+  text-align: center;
+  background-color:  #FF7F5C;
+  padding: 10px 10px;
+}
+label {
+    display: inline-block;
+  padding: 5px;
+  background-color: black;
+  color: orange;
+  border: 1px solid black;
+    }
+
+.btn-btn-primary {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 auto;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 5%;
+  will-change: transform;
+}
+    </style>
+
+
+  </head>
+  <body>
+<div class='row'>
+    <div class='col-5 mx-auto'>
+     <div class="header"><h2>Edit Record</h2></div><br><br>
+      <form method='post' action='{{url_for("edit_record",product_id=datas.product_id)}}'>
+        <div class='form-group'>
+         <label>Product Name</label>
+          <input type='text' name='product_name' required class='form-control' value='{{datas.product_name}}'>
+        </div>
+        <br>
+        <div class='form-group'>
+          <label>About Product</label>
+          <input type='text' name='about_product' required class='form-control' value='{{datas.about_product}}'>
+        </div>
+        <br>
+        <br>
+        <input type='submit' value='Submit' class='btn-btn-primary'>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
